@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="section">
+  <scroll-view scroll-x  style="flex-direction:row; height:60rpx;flex-wrap:nowrap" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <navigator url="/page/demo/index" open-type="redirect" hover-class="navigator-hover" id="green" class="scroll-view-item bc_green">商城首页</navigator>
+    <navigator url="" hover-class="navigator-hover" id="red"  class="scroll-view-item bc_red">中药</navigator>
+    <navigator url="" hover-class="navigator-hover" id="yellow" class="scroll-view-item bc_yellow">西药</navigator>
+    <navigator url="" hover-class="navigator-hover" id="blue" class="scroll-view-item bc_blue">医疗器械</navigator>
+    <navigator url="" hover-class="navigator-hover" id="blue" class="scroll-view-item bc_blue">保健品</navigator>
+    <navigator url="" hover-class="navigator-hover" id="blue" class="scroll-view-item bc_blue">成人用品</navigator>
+    <navigator url="" hover-class="navigator-hover" id="blue" class="scroll-view-item bc_blue">消毒用品</navigator>
+    <navigator url="" hover-class="navigator-hover" id="blue" class="scroll-view-item bc_blue">外科用品</navigator>
+  </scroll-view>
+
+</view>
+
+

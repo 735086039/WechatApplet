@@ -1,0 +1,115 @@
+/**index.wxss**/
+@font-face {
+  font-family: 'iconfont';  /* project id 390222 */
+  src: url('//at.alicdn.com/t/font_390222_apciw8j3haicc8fr.eot');
+  src: url('//at.alicdn.com/t/font_390222_apciw8j3haicc8fr.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_390222_apciw8j3haicc8fr.woff') format('woff'),
+  url('//at.alicdn.com/t/font_390222_apciw8j3haicc8fr.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_390222_apciw8j3haicc8fr.svg#iconfont') format('svg');
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+image{
+  width: 100%;
+  height: 310rpx;
+
+}
+.section{
+  padding: 10rpx;
+  border-bottom: 2rpx solid #e9e9e9;
+}
+
+.section navigator{
+  display: inline-flex;
+  flex-wrap:nowrap;
+  font-size: 24rpx;
+  font-family: "Microsoft YaHei";
+  padding: 13rpx;
+}
+
+.navigator-hover {
+    color:#28cacc;
+    background: none;
+}
+
+.section-view{
+  display: flex;
+  height: 160rpx;
+  border-bottom:2rpx solid #e9e9e9;
+  line-height:160rpx;
+  justify-content: space-around;  
+  padding-top: 60rpx;
+}
+.section-view .bc_green:before{
+  font-family: 'iconfont' !important;
+  content:"\e600";
+  color: red;
+  font-size: 80rpx !important;
+}
+.section-view .bc_red:before{
+  font-family: 'iconfont' !important;
+  content:"\e9a0";
+  color: #65b9f9;
+  font-size: 80rpx !important;
+}
+.section-view .bc_blue:before{
+  font-family: 'iconfont' !important;
+  content:"\e632";
+  color: #ffc700;
+  font-size: 80rpx !important;
+}
+.section-view .bc_blue4:before{
+  font-family: 'iconfont' !important;
+  content:"\e781";
+  color: #28cacc;
+  font-size: 80rpx !important;
+}
+.section-view div{
+  display: block;
+  line-height: 50rpx;
+  font-size: 24rpx;
+  font-family: "Microsoft YaHei";
+  text-align: center;
+  
+}
+
+.medicine{
+  margin-top: -2rpx;
+  text-align:center;
+  font-size: 28rpx;
+  border-top: 20rpx solid #e6e6e6;
+  padding-top: 10rpx; 
+}
+.medicine text{
+  color: #65b9f9;
+  padding: 20rpx;
+  display:block;
+
+}
+
+.medicine-view{
+  display: flex;
+  flex-wrap: wrap;  
+}
+.medicine-view view{
+  width: 375rpx;
+  height: 350rpx;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  border-right: none;
+  border-bottom: none;
+}
+.medicine image{
+  width: 50%;
+}
