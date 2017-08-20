@@ -1,5 +1,14 @@
 /**app.wxss**/
 
+@font-face {
+  font-family: 'iconfont';  /* project id 390222 */
+  src: url('//at.alicdn.com/t/font_390222_txtwrq4sedlmzpvi.eot');
+  src: url('//at.alicdn.com/t/font_390222_txtwrq4sedlmzpvi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_390222_txtwrq4sedlmzpvi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_390222_txtwrq4sedlmzpvi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_390222_txtwrq4sedlmzpvi.svg#iconfont') format('svg');
+}
+
 body{
   font-family: "Microsoft YaHei"
 }

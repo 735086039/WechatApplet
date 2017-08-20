@@ -35,3 +35,13 @@
   </view>
 </view>
 
+<view class="traditional">
+  <text>中药</text>
+  <view class="medicine-view">
+    <view class="classname" wx:for="{{medicine}}"><image src="{{item}}"  width="100%" /></view>    
+  </view>
+</view>
+
+
+
+
