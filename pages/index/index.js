@@ -5,6 +5,7 @@
 var order = ['red', 'yellow', 'blue', 'green', 'red']
 
 Page({
+  
   data: {
     motto: 'list列表渲染',
     imgUrls: [
@@ -91,5 +92,8 @@ Page({
       }
     }
   }
+
+
+ 
 
 })

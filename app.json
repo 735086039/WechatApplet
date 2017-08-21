@@ -1,10 +1,12 @@
 {
   "pages":[
+     
     "pages/index/index",
     "pages/logs/logs",
     "pages/demo/index",
     "pages/me/index",
-    "pages/search/index"
+    "pages/search/index",
+    "pages/shoping/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -32,7 +34,7 @@
         "selectedIconPath":"images/search_action.png"
       },
       {
-        "pagePath": "pages/demo/index",
+        "pagePath": "pages/shoping/index",
         "text": "购物车",
         "iconPath":"images/shoping.png",
         "selectedIconPath":"images/shoping_action.png"
