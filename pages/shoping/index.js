@@ -117,6 +117,27 @@ Page({
       carts: carts,
       totalPrice: total.toFixed(2)
     });
+  },
+
+
+  //request请求
+  ajaxs(){
+    wx.request({
+      url: 'http://app.yidab.com/user/getAllMedicineList.do', //仅为示例，并非真实的接口地址
+      data: {
+        clinicCode: '815a2e98-9ac2-4c95-b5b4-de17ceffddef'       
+      },
+     
+      header: {
+        'content-type': 'application/json'
+      },
+      method: 'POST',
+      success: function (res) {
+        console.log(res.data)
+      }
+    })
+
   }
+
 
 })

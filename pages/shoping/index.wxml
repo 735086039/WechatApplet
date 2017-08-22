@@ -17,7 +17,7 @@
             </view>
         </view>
 
-        <view class="cart-footer">
+        <view class="cart-footer" bindtap="ajaxs" >
             <icon wx:if="{{selectAllStatus}}" type="success_circle" color="#fff" class="total-select" bindtap="selectAll"/>
             <icon wx:else type="circle" color="#fff" class="total-select" bindtap="selectAll"/>
             <navigator url="../orders/orders"><view class="order-icon"></view></navigator>

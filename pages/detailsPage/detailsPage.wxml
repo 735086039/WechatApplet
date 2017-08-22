@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper-lb">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="commodity">
+  <text>{{commodity}}</text>
+  <text>规格：</text>
+  <text>￥99.00</text>
+</view>
+
+<view class="center">
+  <div>已选 </div>
+  <div style="display:flex;margin-top:10rpx;">
+    <text class="deleNuber"></text>
+    <input style="width:60px;text-align:center;" disabled="true"  maxlength="3" value="{{number}}" />
+    <text class="addNumber"></text>
+  </div>
+  
+</view>
+
+
+<view class="view-bottom">
+  <view class="details {{curIndex === 0 ?'action':''}}" bindtap="bindTap" data-index="0">详情</view>
+  <view class="evaluate {{curIndex ===1 ?'action':''}}" bindtap="bindTap" data-index="1">评价</view>  
+</view>
+<view class="view-show">
+    <view wx:if="{{curIndex===0}}" class="classname">
+      <view wx:for="{{xingqImg}}">
+        <image width="100%" src="{{item}}"></image>
+      </view>
+    </view>
+    <view wx:if="{{curIndex===1}}" class="classname">1</view>
+</view>
+
+
