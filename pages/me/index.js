@@ -3,7 +3,9 @@ Page({
   data: { 
     thumb: '',
     nickname: '',   
-    imgUrls:'http://myzh-ucenter.oss-cn-beijing.aliyuncs.com//2017/07/22/file1500685045182664758.jpg'  
+    imgUrls:'http://myzh-ucenter.oss-cn-beijing.aliyuncs.com//2017/07/22/file1500685045182664758.jpg' ,
+    Pending:1,
+    waitFor:2 
   },
 
   onLaunch: function () {
@@ -58,14 +60,14 @@ Page({
          console.log(res.detailInfo)
          console.log(res.nationalCode)
          console.log(res.telNumber)
-       },
-       fail: function (err) {
-         console.log(JSON.stringify(err))
-         wx.showModal({
-           title:'失败',
-           content:'调取原生地址失败'
-         })
        }
+      //  fail: function (err) {
+      //    console.log(JSON.stringify(err))
+      //    wx.showModal({
+      //      title:'失败',
+      //      content:'调取原生地址失败'
+      //    })
+      //  }
      })
 
    }else{
@@ -93,6 +95,18 @@ Page({
         // 转发失败
       }
     }
+  },
+
+  //优惠券
+  Coupon(){
+    // wx.showModal({
+    //   title: '提示',
+    //   content: '优惠券功能暂未开通！'
+    // })
+    wx.showToast({
+      title: '优惠券暂未开通',     
+      duration: 2000
+    })
   }
   
 })

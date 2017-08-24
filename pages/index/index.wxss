@@ -113,3 +113,26 @@ image{
 .medicine image,.traditional image{
   width: 60%;
 }
+
+.search{
+
+}
+.search view{
+  font-size: 24rpx;
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  width: 80%;
+  color: #ccc;
+  margin: 10rpx auto;
+  padding:10rpx;
+  text-align: center
+  
+}
+
+.search view::before{
+   font-family: 'iconfont' !important;
+  content:"\e603";  
+  margin-right: 10rpx;
+  font-size: 26rpx;
+  text-align: center
+}

@@ -1,0 +1,101 @@
+<!--index.wxml-->
+<view class="order">  
+  <view class="{{tabHidden==0?'orderAction': ''}}" bindtap="orderAction" data-index="0">全部订单</view>
+  <view class="{{tabHidden==1?'orderAction': ''}}" bindtap="orderAction"  data-index="1">待付款</view>
+  <view class="{{tabHidden==2?'orderAction': ''}}" bindtap="orderAction"  data-index="2">待收货</view>
+</view>
+
+<view class="orderContent">
+  <!--全部订单-->
+  <view class="" wx:if="{{tabHidden===0}}">
+    <view wx:for="{{allorder}}" wx:key="{{index}}" style="margin-bottom:10rpx;background:#fff;padding: 20rpx;">
+      <view class="" style="border-bottom:1px solid #e9e9e9; display:block;padding-bottom:10rpx;font-size:24rpx;" data-index="{{index}}">
+        <text style="">订单编号：{{item.orderNumber}}</text>
+        <text style="float:right;color:#ff9902"> {{item.orderType}}</text>
+      </view>
+
+      <view class="contentSp" style="display:flex" data-index="{{index}}">
+        <view class="contentSpImg"><image src="{{item.commodityImg}}"></image></view>
+        <view class="contentSpName">{{item.CommodityName}}</view>
+        <view class="contentSpNumber">
+          <text>￥{{item.Price}}</text>
+          <text>￥{{item.originalPrice}}</text>
+          <text>x{{item.TotalPiece}}</text>
+        </view>     
+      </view>
+
+      <view class="" style="text-align:right;font-size:24rpx;">
+        <text style="margin-right:20rpx;">共{{item.TotalPiece}}件商品</text> 
+        <text>合计：￥{{item.TotalPrice}}（含运费￥{{item.freight}}）</text>
+      </view>
+
+      <view class="bottomBut">
+        <button style="width:80rpx;height:40rpx;" bindtap="delete" wx:if="{{item.transactionType===0}}" data-index="{{index}}">删除订单</button>
+        <button style="background:#28cacc;color:#fff;border:none;" wx:if="{{item.transactionType===0}}">追加评价</button>
+        <button style="background:#28cacc;color:#fff;border:none;" wx:if="{{item.transactionType===1}}">立即支付</button>
+        <button style="background:#28cacc;color:#fff;border:none;" wx:if="{{item.transactionType===2}}">确认收货</button>
+      </view>
+    </view>
+  </view>
+
+  <!--待付款-->
+  <view class="" wx:if="{{tabHidden===1}}">
+    <view style="margin-bottom:10rpx;background:#fff;padding: 20rpx;">
+      <view class="" style="border-bottom:1px solid #e9e9e9; display:block;padding-bottom:10rpx;font-size:24rpx;">
+        <text style="">订单编号：123456878999</text>
+        <text style="float:right;color:#ff9902"> 未付款</text>
+      </view>
+
+      <view class="contentSp" style="display:flex">
+        <view class="contentSpImg"><image src="http://123.56.228.112:35678/59eec97e-8879-478f-a111-085013781647.png"></image></view>
+        <view class="contentSpName">珍珠明目滴眼液</view>
+        <view class="contentSpNumber">
+          <text>￥22.00</text>
+          <text>￥21.00</text>
+          <text>x1</text>
+        </view>     
+      </view>
+
+      <view class="" style="text-align:right;font-size:24rpx;">
+        <text style="margin-right:20rpx;">共1件商品</text> 
+        <text>合计：￥22.00（含运费￥0.00）</text>
+      </view>
+
+      <view class="bottomBut">
+      
+        <button style="background:#28cacc;color:#fff;">立即支付</button>
+      </view>
+    </view>
+  </view>
+
+  <!--待收货-->  
+  <view class="" wx:if="{{tabHidden===2}}">
+    <view style="margin-bottom:10rpx;background:#fff;padding: 20rpx;">
+      <view class="" style="border-bottom:1px solid #e9e9e9; display:block;padding-bottom:10rpx;font-size:24rpx;">
+        <text style="">订单编号：123456878999</text>
+        <text style="float:right;color:#ff9902"> 待收货</text>
+      </view>
+
+      <view class="contentSp" style="display:flex">
+        <view class="contentSpImg"><image src="http://123.56.228.112:35678/312519d0-0d72-4432-8843-ef62ee8b1709.png"></image></view>
+        <view class="contentSpName">珍珠明目滴眼液</view>
+        <view class="contentSpNumber">
+          <text>￥22.00</text>
+          <text>￥21.00</text>
+          <text>x1</text>
+        </view>     
+      </view>
+
+      <view class="" style="text-align:right;font-size:24rpx;">
+        <text style="margin-right:20rpx;">共1件商品</text> 
+        <text>合计：￥22.00（含运费￥0.00）</text>
+      </view>
+
+      <view class="bottomBut">    
+        <button style="background:#28cacc;color:#fff">确认收货</button>
+      </view>
+    </view>
+  </view>
+</view>
+
+

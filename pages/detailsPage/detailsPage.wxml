@@ -15,11 +15,11 @@
 </view>
 
 <view class="center">
-  <div>已选 </div>
+  <div>数量 </div>
   <div style="display:flex;margin-top:10rpx;">
-    <text class="deleNuber"></text>
+    <text class="deleNuber" bindtap="delete"></text>
     <input style="width:60px;text-align:center;" disabled="true"  maxlength="3" value="{{number}}" />
-    <text class="addNumber"></text>
+    <text class="addNumber" bindtap="add"></text>
   </div>
   
 </view>
@@ -35,7 +35,19 @@
         <image width="100%" src="{{item}}"></image>
       </view>
     </view>
-    <view wx:if="{{curIndex===1}}" class="classname">1</view>
+    <view wx:if="{{curIndex===1}}" class="classname">
+      <view class="" wx:for="{{evaluate}}" style="margin-bottom:10px;">
+        <text style="color:#999">{{item.user}}</text>
+        <text style="float:right; color:#999">{{item.time}}</text>
+        <view class="" style="margin-top:10rpx; color:#333">{{item.content}}</view>
+      </view>
+    </view>
 </view>
 
+<!--footer-->
+<view class="detailFooter">
+  <view class="Shopping"><navigator url="../shopping/index"  open-type="switchTab" hover-class="other-navigator-hover"><div style="display:block;">购物车</div></navigator></view>
+  <view class="addShopping" bindtap="addShopping">加入购物车</view>
+  <view class="Buynow"><navigator url="../shopping/index" open-type="switchTab" hover-class="other-navigator-hover">立即购买</navigator></view>
+</view>
 

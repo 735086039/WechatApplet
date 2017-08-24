@@ -8,10 +8,10 @@
 </view>
 
 <view class="listType">
-  <view class="classname allOrder">全部订单<i></i></view>
-  <view class="classname PendingPayment">待付款<i></i></view>
-  <view class="classname received">待收货<i></i></view>
+  <navigator url="../order/order" hover-class="navigator-hover"><view class="classname allOrder">全部订单<i></i></view></navigator>
+  <navigator url="../order/order?Pending={{Pending}}" hover-class="navigator-hover"><view class="classname PendingPayment">待付款<i></i></view></navigator>
+  <navigator url="../order/order?waitFor={{waitFor}}" hover-class="navigator-hover"><view class="classname received">待收货<i></i></view></navigator>
   <view bindtap="address" class="classname address">收货地址<i></i></view>
 </view>
 
-<view class="Coupon">优惠券<i></i></view>
+<view class="Coupon" bindtap="Coupon">优惠券<i></i></view>

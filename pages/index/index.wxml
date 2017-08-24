@@ -8,7 +8,7 @@
   </block>
 </swiper>
 
-<view class="section">
+<!-- <view class="section">
   <scroll-view scroll-x  style="flex-direction:row; height:60rpx;flex-wrap:nowrap" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-left="{{scrollLeft}}">
     <navigator url="/page/demo/index" hover-class="navigator-hover" id="green" class="scroll-view-item bc_green">商城首页</navigator>
     <navigator url="/page/demo/index" open-type="switchTab" hover-class="navigator-hover" id="red"  class="scroll-view-item bc_red">中药</navigator>
@@ -19,6 +19,10 @@
     <navigator url="" hover-class="navigator-hover" id="blue" class="scroll-view-item bc_blue">消毒用品</navigator>
     <navigator url="" hover-class="navigator-hover" id="blue" class="scroll-view-item bc_blue">外科用品</navigator>
   </scroll-view>
+</view> -->
+
+<view class="search">
+   <navigator url="../search/index"  open-type="switchTab" hover-class="other-navigator-hover"><view class="">请输入搜索内容</view></navigator>
 </view>
 
 <view class="section-view">

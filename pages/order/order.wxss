@@ -1,0 +1,78 @@
+/**index.wxss**/
+Page{
+  font-size: 24rpx;
+  font-family: "Microsoft YaHei";
+  background-color:#EFEFF4;
+}
+.order{
+  display: flex;
+  background: #fff;
+}
+.order view{
+  width: 34%;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #e9e9e9;
+  text-align: center;
+  color: #333;
+  font-size: 28rpx;
+}
+.orderAction{
+  color: #28cacc !important;
+  border-bottom: 2px solid #28cacc !important;
+}
+.orderContent{
+  /* padding: 20rpx; */
+  /* background: #fff; */
+}
+.orderContent{
+  margin-top: 20rpx;
+}
+
+.contentSp{
+  padding-top: 10rpx;
+}
+.contentSpImg{
+  width:30%;
+  height: 203rpx;
+}
+.contentSpImg image {
+  width: 100%;
+  height: 100%
+}
+
+.contentSpName{
+  width: 40%;
+  font-size: 28rpx;
+}
+.contentSpNumber{
+  width: 30%;
+  
+}
+.contentSpNumber text{
+  display: block;
+  width: 100%;
+  text-align:right;
+  margin-bottom: 20rpx;
+}
+.contentSpNumber text:nth-child(2){
+  color: #ccc;
+  text-decoration:line-through;
+}
+
+.bottomBut{
+  text-align: right;
+  margin-top: 10rpx;
+  border-top: 1px solid #e9e9e9;
+  padding-top:10rpx;
+}
+.bottomBut button{
+  width: 80rpx;
+  height: 40rpx;
+  display: inline;
+  font-size: 24rpx;
+  padding: 10rpx;
+  margin-left: 10rpx;
+  background: #fff;
+  color: #333;
+}

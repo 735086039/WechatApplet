@@ -34,18 +34,18 @@ page{
   padding: 20rpx;
   margin-top: 20rpx;
 }
-.deleNuber{
-
+.deleNuber,.addNumber{
+  padding-top: 2px;
 }
-.deleNuber:after{
+.deleNuber::after{
   font-family: 'iconfont';
   content: "\e715";
-  font-size: 36rpx;
+  font-size: 40rpx;
 }
-.addNumber:after{
+.addNumber::after{
   font-family: 'iconfont';
   content: "\e615";
-  font-size: 36rpx;
+  font-size: 40rpx;
 }
 
 
@@ -73,4 +73,47 @@ page{
 .action{
   color: #28cacc;
   border-bottom: 1px solid #28cacc;
+}
+
+
+.evaluate{
+  overflow: hidden;
+}
+.evaluate-content{
+  margin-top: 10rpx;
+}
+
+.detailFooter{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  width: 100%
+}
+
+.Shopping{
+  width: 20%;
+  background: #fff;
+  text-align: center;
+}
+.Shopping navigator::before{
+  font-family: 'iconfont';
+  content: "\e602";
+  font-size: 44rpx;
+}
+.addShopping{
+  background: #ff9a03;
+  color: #fff;
+  width: 40%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 32rpx;
+}
+.Buynow{
+  background: #28cacc;
+  color: #fff;
+  width: 40%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 32rpx;
 }

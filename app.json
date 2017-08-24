@@ -1,13 +1,14 @@
 {
   "pages":[
-    "pages/detailsPage/detailsPage",
+    
     "pages/index/index",
     "pages/logs/logs",
     "pages/demo/index",
     "pages/me/index",
     "pages/search/index",
-    "pages/shoping/index",
-    "pages/detailsPage/detailsPage"
+    "pages/shopping/index",
+    "pages/detailsPage/detailsPage",
+    "pages/order/order"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -35,7 +36,7 @@
         "selectedIconPath":"images/search_action.png"
       },
       {
-        "pagePath": "pages/shoping/index",
+        "pagePath": "pages/shopping/index",
         "text": "购物车",
         "iconPath":"images/shoping.png",
         "selectedIconPath":"images/shoping_action.png"
