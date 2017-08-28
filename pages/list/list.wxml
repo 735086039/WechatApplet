@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="search">
+   <navigator url="../search/index"  open-type="switchTab" hover-class="other-navigator-hover"><view class="">请输入搜索内容</view></navigator>
+</view>
+
+<view class="screen"> 
+  <view class="">综合</view>
+  <view class="">销量</view>
+  <view class="">价格</view>
+</view>
+
+<view class="listOfGoods" wx:for="{{list}}">
+  <view class="listOfImg" bindtap="pageJump">
+    <image src="{{item.img}}"></image>
+  </view>
+
+  <view class="listOfRight">
+    <view class="rightTitle">{{item.title}}</view>
+    <view class="rightPrice">{{item.price}}</view>
+    <view class="rightPraise">好评率：{{item.praise}}</view>
+  </view>
+</view>
+
+
