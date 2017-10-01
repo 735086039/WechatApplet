@@ -55,6 +55,7 @@ Page({
         title: '搜索中',
         icon: 'loading'
       });
+      this.pageJump();  //跳转到上您列表页面
       wx.request({
         url: app.globalData.API_URL + 'searchTeam',
         data: {
@@ -84,7 +85,14 @@ Page({
         }
       })
     }
-  }
+   
+  },
+  //页面跳转
+  pageJump() {
+    wx.navigateTo({
+      url: '../list/list'
+    })
+  }  
 })
 
 
